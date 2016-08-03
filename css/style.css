@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#menu{
+    background: #eee;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+#menu a{
+    margin-left: 10px;
+    color: brown;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+#menu a:hover{
+    border-bottom: 1px solid brown;
+}
+main > section{
+    padding: 20px 5px;
+}
+
+section h1{
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.jumbotron{
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    background: rgba(255,255,255,.5);
+    border-radius: 10px;
+    text-align: center;
+}
+table th{
+    padding: 10px;
+}
+table td{
+    padding: 5px 10px;
+}
+#viewHome{
+    padding: 0;
+}
+#viewHome .col-md-12{
+    background: url('../images/books.jpg') center no-repeat fixed;
+    background-size: cover;
+    height: 200px;
+}
+#viewLogin,#viewRegister{
+    margin: 0 auto;
+    width: 300px;
+}
+#viewLogin input,#viewRegister input{
+    margin-bottom: 10px;
+}
+#infoBox,#errorBox,#loadingBox{
+    width: 80%;
+    margin: 10px auto;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border: 3px;
+}
+#infoBox{
+    background: cornflowerblue;
+}
+#errorBox{
+    background: tomato;
+}
+#loadingBox{
+    background: limegreen;
+}
+footer{
+    background: #eee;
+    text-align: center;
+    padding: 5px;
+    font-size: .7em;
+}

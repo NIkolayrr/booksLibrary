@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books Library</title>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="menu">
+        <a href="#" id="linkHome">Home</a>
+        <a href="#" id="linkLogin">Login</a>
+        <a href="#" id="linkRegister">Register</a>
+        <a href="#" id="linkListBooks">List Books</a>
+        <a href="#" id="linkCreateBooks">Create Books</a>
+        <a href="#" id="linkLogout">Logout</a>
+    </header>
+    <main>
+        <section id="loadingBox">Loading..</section>
+        <section id="infoBox" onclick='$(this).fadeOut()'>Info</section>
+        <section id="errorBox" onclick='$(this).fadeOut()'>Error</section>
+        <section id="viewHome">
+            <div class="row">
+                <div class="col-md-12">
+
+                </div>
+            </div>
+            <div  class="jumbotron">
+                <h2>Welcolme to the Book Library!</h2>
+            </div>
+        </section>
+        <section id="viewLogin">
+            <h1>Please Login</h1>
+            <hr>
+            <form action="" id="formLogin">
+                <div>Username:</div>
+                <div><input class="form-control" type="text" id="loginUser" required></div>
+                <div>Password:</div>
+                <div><input class="form-control" type="password" id="loginPass" required></div>
+                <div><input type="submit" class="btn btn-default" value="login"></div>
+            </form>
+        </section>
+        <section id="viewRegister">
+            <h1>Please Register here</h1>
+            <hr>
+            <form action="" id="formRegister">
+                <div>Username:</div>
+                <div><input class="form-control" type="text" id="registerUser" required></div>
+                <div>Password:</div>
+                <div><input type="password" class="form-control" id="registerPass" required></div>
+                <div><input type="submit" class="btn btn-default" value="Register"></div>
+            </form>
+        </section>
+        <section id="viewBooks">
+            <h1>Books</h1>
+            <hr>
+            <div id="books"></div>
+        </section>
+        <section id="viewCreatedBook" >
+            <h1>Create new book</h1>
+            <form action="" id="formCreateBook">
+                <div>Title:</div>
+                <div><input type="text" id="bookTitle" required></div>
+                <div>Author:</div>
+                <div><input type="text" id="bookAuthor" required></div>
+                <div>Description</div>
+                <div><textarea name="" id="bookDescription" cols="30" rows="10"></textarea></div>
+                <div><input type="submit" class="btn btn-default" value="Create"></div>
+            </form>
+        </section>
+    </main>
+    <footer>Books library - sample project</footer>
+    <script src="scripts/books.js"></script>
+</body>
+</html>
